@@ -24,7 +24,7 @@ const AdminApplications = () => {
   const [selectedApp, setSelectedApp] = useState(null);
   const [showModal, setShowModal] = useState(false);
 
-  const API_BASE_URL = `${process.env.VITE_API_URL}/api`;
+  const API_BASE_URL = `${import.meta.env.VITE_API_URL}/api`;
 
   useEffect(() => {
     fetchApplications();

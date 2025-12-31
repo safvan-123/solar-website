@@ -53,7 +53,7 @@ const Products = () => {
     isActive: true,
   });
 
-  const API_URL = "http://localhost:5000/api/products";
+  const API_URL = `${process.env.VITE_API_URL}/api/products`;
 
   useEffect(() => {
     fetchProducts();

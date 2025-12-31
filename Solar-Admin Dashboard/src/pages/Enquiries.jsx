@@ -28,7 +28,7 @@ const Enquiries = () => {
     searchTerm: "",
   });
 
-  const API_URL = "http://localhost:5000/api/contacts";
+  const API_URL = `${process.env.VITE_API_URL}/api/contacts`;
 
   useEffect(() => {
     fetchContacts();

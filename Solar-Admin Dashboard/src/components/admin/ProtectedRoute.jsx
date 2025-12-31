@@ -22,7 +22,7 @@ const ProtectedRoute = ({ children }) => {
       try {
         // Verify token with backend
         const response = await axios.get(
-          "http://localhost:5000/api/admin/profile",
+          `${process.env.VITE_API_URL}/api/admin/profile`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

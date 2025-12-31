@@ -34,37 +34,6 @@ const AdminLogin = () => {
     setError("");
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setLoading(true);
-  //   setError("");
-  //   setSuccess("");
-
-  //   try {
-  //     const response = await axios.post(
-  //       "http://localhost:5000/api/admin/login",
-  //       formData
-  //     );
-  //     console.log(response);
-
-  //     // Store token in localStorage
-  //     localStorage.setItem("adminToken", response.data.token);
-
-  //     setSuccess("Login successful! Redirecting...");
-
-  //     // Use navigate instead of window.location.href
-  //     setTimeout(() => {
-  //       navigate("/admin", { replace: true });
-  //     }, 1500);
-  //   } catch (err) {
-  //     setError(
-  //       err.response?.data?.message || "Login failed. Please try again."
-  //     );
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -73,7 +42,7 @@ const AdminLogin = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/admin/login",
+        `${process.env.VITE_API_URL}/api/admin/login`,
         formData
       );
 

@@ -31,7 +31,8 @@ const Careers = () => {
     resume: null,
   });
 
-  const API_BASE_URL = `${import.meta.env.VITE_API_URL}/api`;
+  const API_BASE_URL = `https://solar-website-o1o4.onrender.com
+/api`;
   console.log(API_BASE_URL);
 
   useEffect(() => {
@@ -44,6 +45,7 @@ const Careers = () => {
     try {
       const res = await fetch(`${API_BASE_URL}/jobs`);
       const data = await res.json();
+      console.log(jobs);
 
       setJobs(data || []);
     } catch (error) {

@@ -30,7 +30,7 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
-  const API_BASE_URL = `${process.env.VITE_API_URL}/api/contacts`;
+  const API_BASE_URL = `${import.meta.env.VITE_API_URL}/api/contacts`;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -312,6 +312,28 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* Map Section */}
+      <section className="map-section">
+        <div className="container">
+          <div className="section-header">
+            <h2 className="section-title">Visit Our Office</h2>
+            <p className="section-subtitle">Come meet us at our location</p>
+          </div>
+          <div className="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3937.2968334668994!2d76.38312837502231!3d9.306944990765928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMTgnMjUuMCJOIDc2wrAyMycwOC41IkU!5e0!3m2!1sen!2sin!4v1766827240266!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="EcoGreen Location"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="faq-section">
         <div className="container">
@@ -332,28 +354,6 @@ const Contact = () => {
                 <p className="faq-answer">{faq.answer}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Map Section */}
-      <section className="map-section">
-        <div className="container">
-          <div className="section-header">
-            <h2 className="section-title">Visit Our Office</h2>
-            <p className="section-subtitle">Come meet us at our location</p>
-          </div>
-          <div className="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3937.2968334668994!2d76.38312837502231!3d9.306944990765928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMTgnMjUuMCJOIDc2wrAyMycwOC41IkU!5e0!3m2!1sen!2sin!4v1766827240266!5m2!1sen!2sin"
-              width="100%"
-              height="450"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="EcoGreen Location"
-            ></iframe>
           </div>
         </div>
       </section>

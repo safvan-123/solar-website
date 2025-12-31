@@ -31,7 +31,7 @@ const Careers = () => {
     resume: null,
   });
 
-  const API_BASE_URL = `${process.env.VITE_API_URL}/api`;
+  const API_BASE_URL = `${import.meta.env.VITE_API_URL}/api`;
 
   useEffect(() => {
     window.scrollTo(0, 0);

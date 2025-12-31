@@ -26,7 +26,9 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get(`${process.env.VITE_API_URL}/api/products`);
+        const res = await axios.get(
+          `${import.meta.env.VITE_API_URL}/api/products`
+        );
         setProducts(res.data);
       } catch (error) {
         console.error("Error fetching products", error);
@@ -39,7 +41,7 @@ const Products = () => {
     const fetchCategories = async () => {
       try {
         const res = await axios.get(
-          `${process.env.VITE_API_URL}/api/productcategories`
+          `${import.meta.env.VITE_API_URL}/api/productcategories`
         );
 
         setProductCategories(res.data.filter((cat) => cat.isActive));

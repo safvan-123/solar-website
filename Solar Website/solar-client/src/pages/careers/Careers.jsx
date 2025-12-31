@@ -32,6 +32,7 @@ const Careers = () => {
   });
 
   const API_BASE_URL = `${import.meta.env.VITE_API_URL}/api`;
+  console.log(API_BASE_URL);
 
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Sun, Download, Menu, X } from "lucide-react";
+import { Sun, Download, Menu, X, Calculator } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import logoIcon from "../../assets/images/ecogreen_logo.jpeg";
 import logotext from "../../assets/images/ecogreen_text.jpeg";
@@ -130,8 +130,9 @@ const SolarNavbar = () => {
             setExpanded(false);
           }}
         >
-          <Download size={18} />
-          Contact Us
+          {/* <Download size={18} /> */}
+          <Calculator size={18} />
+          Get a Free Solar Quote
         </button>
       </div>
     </>

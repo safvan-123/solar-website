@@ -20,26 +20,21 @@ const app = express();
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
-  "https://solar-website-topaz.vercel.app", // your Vercel preview URL
-  "https://solar-website-ecogreen.vercel.app", // your production URL
+  "https://solar-website-topaz.vercel.app",
+  "https://solar-website-ecogreen.vercel.app",
 ];
 
 app.use(
   cors({
     origin: function (origin, callback) {
-      // allow requests with no origin (like mobile apps or curl)
       if (!origin) return callback(null, true);
-      if (allowedOrigins.indexOf(origin) === -1) {
-        const msg = `The CORS policy for this site does not allow access from the specified Origin.`;
-        return callback(new Error(msg), false);
-      }
-      return callback(null, true);
+      if (allowedOrigins.includes(origin)) return callback(null, true);
+      return callback(new Error("CORS not allowed"), false);
     },
     credentials: true,
   })
 );
-// ⚡ Allow preflight requests for all routes
-app.options("*", cors());
+
 app.use(express.json());
 app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
 // app.use("/uploads", express.static("uploads"));

@@ -30,7 +30,7 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
-  const API_BASE_URL = `${import.meta.env.VITE_API_URL}/api/contacts`;
+  const API_BASE_URL = "https://solar-website-o1o4.onrender.com/api/contacts";
 
   useEffect(() => {
     window.scrollTo(0, 0);

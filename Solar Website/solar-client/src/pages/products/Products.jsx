@@ -27,8 +27,10 @@ const Products = () => {
     const fetchProducts = async () => {
       try {
         const res = await axios.get(
-          `${import.meta.env.VITE_API_URL}/api/products`
+          "https://solar-website-o1o4.onrender.com/api/products"
         );
+        console.log(res);
+
         setProducts(res.data);
       } catch (error) {
         console.error("Error fetching products", error);
@@ -41,7 +43,7 @@ const Products = () => {
     const fetchCategories = async () => {
       try {
         const res = await axios.get(
-          `${import.meta.env.VITE_API_URL}/api/productcategories`
+          "https://solar-website-o1o4.onrender.com/api/productcategories"
         );
 
         setProductCategories(res.data.filter((cat) => cat.isActive));
@@ -228,7 +230,7 @@ const Products = () => {
             </p>
           </div>
           <div className="benefits-grid">
-            {benefits.map((benefit, index) => (
+            {benefits?.map((benefit, index) => (
               <div
                 key={index}
                 className="benefit-card"

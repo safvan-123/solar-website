@@ -30,9 +30,7 @@ const Careers = () => {
     coverLetter: "",
     resume: null,
   });
-
-  const API_BASE_URL = `https://solar-website-o1o4.onrender.com
-/api`;
+  const API_BASE_URL = "https://solar-website-o1o4.onrender.com/api";
   console.log(API_BASE_URL);
 
   useEffect(() => {

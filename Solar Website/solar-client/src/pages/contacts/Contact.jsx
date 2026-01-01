@@ -98,7 +98,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["0477-2292212", "+91 8884146499"],
+      details: ["0477-2292212", "+91 8848132212"],
       color: "#3b82f6",
     },
     {

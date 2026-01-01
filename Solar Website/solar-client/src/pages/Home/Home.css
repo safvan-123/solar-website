@@ -235,7 +235,7 @@ body {
 }
 
 .narrative-section {
-  padding: 80px 24px;
+  padding: 0px 24px 80px 24px;
   background: white;
 }
 
@@ -764,5 +764,37 @@ body {
   .section-title,
   .cta-title {
     font-size: 22px;
+  }
+}
+/* Tata Power Logo Responsive Styles */
+.tata-power-logo-responsive {
+  max-width: 500px;
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Tablet and below */
+@media (max-width: 768px) {
+  .tata-power-logo-responsive {
+    max-width: 350px;
+    width: 85%;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .tata-power-logo-responsive {
+    max-width: 280px;
+    width: 80%;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 360px) {
+  .tata-power-logo-responsive {
+    max-width: 240px;
+    width: 75%;
   }
 }

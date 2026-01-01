@@ -17,15 +17,27 @@ const AppFooter = () => {
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
     { label: "Products", href: "/products" },
-    { label: "Projects", href: "/projects" },
+    // { label: "Projects", href: "/projects" },
     { label: "Careers", href: "/careers" },
     { label: "Contact", href: "/contact" },
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Instagram, href: "#", label: "Instagram" },
+    {
+      icon: Facebook,
+      href: "https://www.facebook.com/share/17jdiuE2TZ/",
+      label: "Facebook",
+    },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/company/ecogreensolaralpy",
+      label: "LinkedIn",
+    },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/ecogreen_solar?utm_source=qr&igsh=b3NlYmNwNnBubWoy",
+      label: "Instagram",
+    },
   ];
 
   return (
@@ -277,7 +289,7 @@ const AppFooter = () => {
               </p>
               <div className="footer-contact-item">
                 <Phone size={16} className="footer-contact-icon" />
-                <span>0477-2292212 , +91 88841 46499</span>
+                <span>0477-2292212 , +91 88481 32212</span>
               </div>
               <div className="footer-contact-item">
                 <Mail size={16} className="footer-contact-icon" />

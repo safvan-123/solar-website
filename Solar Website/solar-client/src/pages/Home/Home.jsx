@@ -363,6 +363,7 @@ const Home = () => {
               </Carousel.Item>
             ))}
           </Carousel>
+
           <div className="hero-overlay"></div>
         </div>
 

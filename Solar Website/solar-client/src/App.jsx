@@ -10,6 +10,8 @@ import AppFooter from "./components/AppFooter.jsx";
 import Contact from "./pages/contacts/Contact.jsx";
 
 function App() {
+  console.log(import.meta.env.VITE_API_URL);
+
   return (
     <BrowserRouter>
       {/* Common Navbar */}

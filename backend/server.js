@@ -19,9 +19,9 @@ app.use(cors());
 app.use(
   cors({
     origin: [
+      "https://solar-website-topaz.vercel.app/",
       "http://localhost:5173",
       "http://localhost:5174",
-      "https://solar-website-topaz.vercel.app/",
     ],
     credentials: true,
   })

@@ -20,6 +20,8 @@ const app = express();
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
+  "https://www.ecogreensolar.in",
+  "https://ecogreensolar.in",
   "https://solar-website-topaz.vercel.app",
   "https://solar-website-ecogreen.vercel.app",
 ];

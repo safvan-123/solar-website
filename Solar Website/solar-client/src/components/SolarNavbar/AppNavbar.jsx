@@ -123,16 +123,16 @@ const SolarNavbar = () => {
           </NavLink>
         ))}
 
-        {/* <button
+        <button
           className="brochure-btn mobile-brochure-btn"
           onClick={() => {
-            window.location.href = "/brochure";
+            window.location.href = "/contact";
             setExpanded(false);
           }}
         >
           <Download size={18} />
-          Download Brochure
-        </button> */}
+          Contact Us
+        </button>
       </div>
     </>
   );

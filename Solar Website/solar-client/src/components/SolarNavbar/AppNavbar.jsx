@@ -123,7 +123,7 @@ const SolarNavbar = () => {
           </NavLink>
         ))}
 
-        <button
+        {/* <button
           className="brochure-btn mobile-brochure-btn"
           onClick={() => {
             window.location.href = "/brochure";
@@ -132,7 +132,7 @@ const SolarNavbar = () => {
         >
           <Download size={18} />
           Download Brochure
-        </button>
+        </button> */}
       </div>
     </>
   );

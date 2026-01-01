@@ -20,6 +20,7 @@ app.use(
   cors({
     origin: [
       "https://solar-website-topaz.vercel.app/",
+      "https://solar-website-ecogreen.vercel.app/",
       "http://localhost:5173",
       "http://localhost:5174",
     ],

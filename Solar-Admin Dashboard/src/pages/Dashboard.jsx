@@ -96,8 +96,8 @@ const Dashboard = () => {
     {
       label: "Total Enquiries",
       value: stats.totalEnquiries,
-      change: "+12%",
-      changeType: "increase",
+      // change: "+12%",
+      // changeType: "increase",
       icon: "📧",
       color: "primary",
       bgGradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
@@ -105,8 +105,8 @@ const Dashboard = () => {
     {
       label: "Active Projects",
       value: stats.activeProjects,
-      change: "+8%",
-      changeType: "increase",
+      // change: "+8%",
+      // changeType: "increase",
       icon: "🚀",
       color: "success",
       bgGradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
@@ -114,8 +114,8 @@ const Dashboard = () => {
     {
       label: "Products Listed",
       value: stats.productsListed,
-      change: "+3%",
-      changeType: "increase",
+      // change: "+3%",
+      // changeType: "increase",
       icon: "📦",
       color: "info",
       bgGradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
@@ -123,8 +123,8 @@ const Dashboard = () => {
     {
       label: "Website Visitors",
       value: `${(stats.websiteVisitors / 1000).toFixed(1)}K`,
-      change: "+23%",
-      changeType: "increase",
+      // change: "+23%",
+      // changeType: "increase",
       icon: "👥",
       color: "warning",
       bgGradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
@@ -242,7 +242,7 @@ const Dashboard = () => {
                     {stat.icon}
                   </div>
                 </div>
-                <div className="d-flex align-items-center">
+                {/* <div className="d-flex align-items-center">
                   <span
                     className={`badge me-2`}
                     style={{
@@ -259,7 +259,7 @@ const Dashboard = () => {
                     {stat.changeType === "increase" ? "↑" : "↓"} {stat.change}
                   </span>
                   <span className="text-muted small">vs last month</span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

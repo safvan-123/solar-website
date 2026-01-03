@@ -22,7 +22,7 @@ const allowedOrigins = [
   "http://localhost:5174",
   "https://www.ecogreensolar.in",
   "https://ecogreensolar.in",
-  "https://solar-website-topaz.vercel.app",
+  "https://solar-admin-panel.onrender.com/",
   "https://solar-website-ecogreen.vercel.app",
 ];
 

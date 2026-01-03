@@ -431,21 +431,21 @@ const Dashboard = () => {
                   {
                     label: "Add New Product",
                     icon: "📦",
-                    href: "/admin/products/add",
+                    href: "/admin/products",
                     gradient:
                       "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
                   },
                   {
                     label: "Post Career Opening",
                     icon: "💼",
-                    href: "/admin/jobs/add",
+                    href: "/admin/jobs",
                     gradient:
                       "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
                   },
                   {
                     label: "View All Enquiries",
                     icon: "📧",
-                    href: "/admin/contacts",
+                    href: "/admin/enquiries",
                     gradient:
                       "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
                   },

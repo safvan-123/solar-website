@@ -120,15 +120,15 @@ const Dashboard = () => {
       color: "info",
       bgGradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
     },
-    {
-      label: "Website Visitors",
-      value: `${(stats.websiteVisitors / 1000).toFixed(1)}K`,
-      // change: "+23%",
-      // changeType: "increase",
-      icon: "👥",
-      color: "warning",
-      bgGradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
-    },
+    // {
+    //   label: "Website Visitors",
+    //   value: `${(stats.websiteVisitors / 1000).toFixed(1)}K`,
+    //   // change: "+23%",
+    //   // changeType: "increase",
+    //   icon: "👥",
+    //   color: "warning",
+    //   bgGradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
+    // },
   ];
 
   if (loading) {
